@@ -1,0 +1,7 @@
+{
+  "title": "Checklist",
+  "description": "Einfache Projekt-Checkliste",
+  "icon": "https://<DEINE-DOMAIN>/tc-checklist/icon.png",
+  "url": "https://<DEINE-DOMAIN>/tc-checklist/index.html",
+  "enabled": true
+}
