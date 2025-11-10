@@ -1,7 +1,7 @@
 {
   "title": "Checklist (Sync)",
   "description": "Einfache Projekt-Checkliste mit optionalem Projektsync",
-  "icon": "https://<DEINE-DOMAIN>/tc-checklist-sync/icon.png",
-  "url": "https://<DEINE-DOMAIN>/tc-checklist-sync/index.html",
+  "icon": "https://aechter.github.io/tc-checklist/cp_logo.png",
+  "url": "https://aechter.github.io/tc-checklist/index.html",
   "enabled": true
 }
