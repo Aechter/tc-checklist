@@ -1,6 +1,7 @@
 {
   "title": "Checklist",
   "description": "Einfache Projekt-Checkliste",
+  "icon": "https://<dein-name>.github.io/tc-checklist/icon.png",
   "url": "https://aechter.github.io/tc-checklist/index.html",
   "enabled": true
 }
