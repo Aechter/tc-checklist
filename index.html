@@ -3,28 +3,42 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Checklist</title>
+  <title>Checklist (Sync)</title>
   <style>
     body { font-family: system-ui, sans-serif; margin: 12px; }
-    h1 { font-size: 18px; margin: 0 0 8px; }
-    form { display:flex; gap:8px; margin-bottom: 10px; }
+    h1 { font-size: 18px; margin: 0 0 6px; }
+    form { display:flex; gap:8px; margin:10px 0; }
     input[type="text"] { flex:1; padding:8px; }
     button { padding:8px 10px; cursor:pointer; }
     ul { list-style:none; padding:0; margin:0; }
     li { display:flex; align-items:center; gap:8px; padding:6px 0; border-bottom:1px solid #eee; }
     li.done label { text-decoration: line-through; opacity:.7; }
+    .row { display:flex; gap:12px; align-items:center; flex-wrap: wrap; }
     .spacer { flex:1; }
     .hint { color:#666; font-size:12px; margin-top:8px; }
+    .badge { font-size:12px; padding:2px 6px; border:1px solid #ccc; border-radius:6px; }
   </style>
 </head>
 <body>
-  <h1>Projekt-Checkliste</h1>
+  <h1>Projekt-Checkliste <span id="syncBadge" class="badge">Sync: aus</span></h1>
+
+  <div class="row">
+    <button id="toggleSyncBtn" type="button">Sync aktivieren</button>
+    <button id="forcePullBtn" type="button" disabled>Remote laden</button>
+    <button id="forcePushBtn" type="button" disabled>Remote speichern</button>
+    <div class="spacer"></div>
+  </div>
+
   <form id="addForm">
     <input id="itemInput" type="text" placeholder="Neuen Punkt eingeben…" autocomplete="off" />
     <button type="submit">Hinzufügen</button>
   </form>
+
   <ul id="list"></ul>
+
   <div class="hint" id="ctxHint">Lade Kontext…</div>
+  <div class="hint" id="logArea"></div>
+
   <script type="module" src="./app.js"></script>
 </body>
 </html>
